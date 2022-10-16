@@ -14,3 +14,9 @@ while(임의의 횟수){
 
 db.save(encoding_password);
 ```
+
+그렇다면 반복 횟수와 난수값이 같은 비밀번호는 같은 해시값은 가지는가? => YES   
+
+BcryptPasswordEncoder의 난수값과 반복횟수는 고정되어있는가? => YES, 그러나 해당 객체를 생성할 때 생성자를 통해 반복 횟수 및 난수 값을 임의로 정할 수 있음.   
+
+난수값과 반복횟수는 못바꾸는가? => YES, 그래서 새로운 BcryptPasswordEncoder 객체를 생성하는 방법 밖에 없다.
