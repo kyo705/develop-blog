@@ -17,6 +17,17 @@ db.save(encoding_password);
 
 그렇다면 반복 횟수와 난수값이 같은 비밀번호는 같은 해시값은 가지는가? => YES   
 
-BcryptPasswordEncoder의 난수값과 반복횟수는 고정되어있는가? => YES, 그러나 해당 객체를 생성할 때 생성자를 통해 반복 횟수 및 난수 값을 임의로 정할 수 있음.   
+BcryptPasswordEncoder의 난수값과 반복횟수는 고정되어있는가? => NO 
 
-난수값과 반복횟수는 못바꾸는가? => YES, 그래서 새로운 BcryptPasswordEncoder 객체를 생성하는 방법 밖에 없다.
+그렇다면 난수값이 매번 바뀌는 과정에서 어떻게 plain값과 해시된 값이 일치하는지 구분할 수 있는가? => BcryptPasswordEncoder에서 제공하는 matches메소드를 사용한다.    
+
+**matches 함수의 동작 원리**   
+
+파라미터로 plain값과 encoding 값을 넘겨주면 해당 encoding 된 값에서 salt 값을 찾아서 plain 값에 salt 값을 더해 hash하여 encoding 한다. 그리고 그 결과 값을 파라미터로 전달받은 encoding 값과 비교하여 같으면 true, 다르면 false로 일치 여부를 판별한다.   
+
+
+느낀점...   
+처음엔 salt 값이 매번 바뀌면 어떻게 비밀번호 판별을 하지? 라는 생각이 있었다. 그래서 당연히 솔트 값과 반복 횟수가 고정되는줄 알았고 실제 document에서 생성자에서 솔트 값과 반복 횟수를 지정할 수 있어서 당연히 고정인 줄 알았다. 하지만 매번 인코딩 되는 값이 달라지는 것을 확인하고 잘못되었다는 것을 알게되었다. 그래서 실제 encoding 값과 plain 값을 비교하는 matches 메소드 내부 코드를 살펴보았고 그 과정에서 시간은 걸렸지만 정확히 어떻게 동작하게 되는지 알 수 있었다.   
+
+결론   
+BcryptPasswordEncoder을 통해 비밀번호를 암호화한다면 매번 다른 해시값을 생성하게 된다!!
