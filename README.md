@@ -6,8 +6,9 @@
 - Spring Quartz
   - [Quartz Job 판별 방식](https://github.com/kyo705/develop-blog/blob/main/spring-quartz/job%20%EA%B5%AC%EB%B6%84%20%EB%B0%A9%EC%8B%9D.md#spring-quartz%EC%9D%98-job-%EA%B5%AC%EB%B6%84-%EB%B0%A9%EC%8B%9D)
 - Spring Security
-  - [BcryptPasswordEncoder](https://github.com/kyo705/develop-blog/blob/main/spring-security/BcryptPasswordEncoder.md#bcryptpasswordencoder)
   - [SecurityContextPersistenceFilter](https://github.com/kyo705/develop-blog/blob/main/spring-security/SecurityContextPersistenceFilter.md#securitycontextpersistencefilter)
   - [UsernamePasswordAuthenticationFilter](https://github.com/kyo705/develop-blog/blob/main/spring-security/UsernamePasswordAuthenticationFilter.md#usernamepasswordauthenticationfilter)
+  - [BcryptPasswordEncoder](https://github.com/kyo705/develop-blog/blob/main/spring-security/BcryptPasswordEncoder.md#bcryptpasswordencoder)
+  - [AuthenticationManager가 PasswordEncoder를 등록하는 과정](https://github.com/kyo705/develop-blog/blob/main/spring-security/AuthenticationManager%EA%B0%80%20PasswordEncoder%EB%A5%BC%20%EB%93%B1%EB%A1%9D%ED%95%98%EB%8A%94%20%EA%B3%BC%EC%A0%95.md#authenticationmanager%EA%B0%80-passwordencoder%EB%A5%BC-%EB%93%B1%EB%A1%9D%ED%95%98%EB%8A%94-%EA%B3%BC%EC%A0%95)
 - 시스템 보안
   - [HMAC](https://github.com/kyo705/develop-blog/blob/main/%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%B3%B4%EC%95%88/HMAC.md#hmackeyed-hash-message-authentication-code)
