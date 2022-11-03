@@ -3,6 +3,9 @@
 
 목  차
 ------------------
+- DataBase
+  - Oracle
+    - [Oracle Architecture](https://github.com/kyo705/develop-blog/blob/main/database/oracle/oracle%20architecture.md#oracle-architecture)
 - Spring Quartz
   - [Quartz Job 판별 방식](https://github.com/kyo705/develop-blog/blob/main/spring-quartz/job%20%EA%B5%AC%EB%B6%84%20%EB%B0%A9%EC%8B%9D.md#spring-quartz%EC%9D%98-job-%EA%B5%AC%EB%B6%84-%EB%B0%A9%EC%8B%9D)
 - Spring Security
