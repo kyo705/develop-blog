@@ -6,6 +6,7 @@
 - DataBase
   - Oracle
     - [Oracle Architecture](https://github.com/kyo705/develop-blog/blob/main/database/oracle/oracle%20architecture.md#oracle-architecture)
+    - [논리적, 물리적 저장 단위](https://github.com/kyo705/develop-blog/blob/main/database/oracle/%EB%85%BC%EB%A6%AC%EC%A0%81%2C%20%EB%AC%BC%EB%A6%AC%EC%A0%81%20%EC%A0%80%EC%9E%A5%20%EB%8B%A8%EC%9C%84.md#%EB%85%BC%EB%A6%AC%EC%A0%81-%EC%A0%80%EC%9E%A5-%EB%8B%A8%EC%9C%84)
 - Spring Quartz
   - [Quartz Job 판별 방식](https://github.com/kyo705/develop-blog/blob/main/spring-quartz/job%20%EA%B5%AC%EB%B6%84%20%EB%B0%A9%EC%8B%9D.md#spring-quartz%EC%9D%98-job-%EA%B5%AC%EB%B6%84-%EB%B0%A9%EC%8B%9D)
 - Spring Security
