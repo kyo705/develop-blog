@@ -10,6 +10,7 @@
      - [PGA와 서버 프로세스](https://github.com/kyo705/develop-blog/blob/main/database/oracle/PGA%EC%99%80%20%EC%84%9C%EB%B2%84%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4.md#pga%EC%99%80-%EC%84%9C%EB%B2%84-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4)
      - [SGA](https://github.com/kyo705/develop-blog/blob/main/database/oracle/SGA.md#sgasystem-global-area)
      - [DATABASE LINK](https://github.com/kyo705/develop-blog/blob/main/database/oracle/Database%20Link.md#database-link)
+     - [INDEX 정의 및 종류](https://github.com/kyo705/develop-blog/blob/main/database/oracle/INDEX.md#index)
 - Spring Quartz
   - [Quartz Job 판별 방식](https://github.com/kyo705/develop-blog/blob/main/spring-quartz/job%20%EA%B5%AC%EB%B6%84%20%EB%B0%A9%EC%8B%9D.md#spring-quartz%EC%9D%98-job-%EA%B5%AC%EB%B6%84-%EB%B0%A9%EC%8B%9D)
 - Spring Security
