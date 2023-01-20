@@ -11,6 +11,7 @@
      - [SGA](https://github.com/kyo705/develop-blog/blob/main/database/oracle/SGA.md#sgasystem-global-area)
      - [DATABASE LINK](https://github.com/kyo705/develop-blog/blob/main/database/oracle/Database%20Link.md#database-link)
      - [INDEX 정의 및 종류](https://github.com/kyo705/develop-blog/blob/main/database/oracle/INDEX.md#index)
+     - [INDEX SCAN 방식](https://github.com/kyo705/develop-blog/blob/main/database/oracle/INDEX%20%EC%8A%A4%EC%BA%94%20%EC%A2%85%EB%A5%98.md#index-%EC%8A%A4%EC%BA%94-%EC%A2%85%EB%A5%98)
 - Spring Quartz
   - [Quartz Job 판별 방식](https://github.com/kyo705/develop-blog/blob/main/spring-quartz/job%20%EA%B5%AC%EB%B6%84%20%EB%B0%A9%EC%8B%9D.md#spring-quartz%EC%9D%98-job-%EA%B5%AC%EB%B6%84-%EB%B0%A9%EC%8B%9D)
 - Spring Security
