@@ -9,8 +9,9 @@ Bcrypt 동작 방식은 난수(salt)을 임의의 횟수 만큼 반복적으로 
 String encoding_password = raw_password;
 
 while(임의의 횟수){
-  encoding_password = hash(salt + encoding_password);
+  encoding_password = hash(encoding_password);
 }
+encoding_password = salt + 횟수 + encoding_password;
 
 db.save(encoding_password);
 ```
@@ -23,7 +24,7 @@ BcryptPasswordEncoder의 난수값과 반복횟수는 고정되어있는가? => 
 
 **matches 함수의 동작 원리**   
 
-파라미터로 plain값과 encoding 값을 넘겨주면 해당 encoding 된 값에서 salt 값을 찾아서 plain 값에 salt 값을 더해 hash하여 encoding 한다. 그리고 그 결과 값을 파라미터로 전달받은 encoding 값과 비교하여 같으면 true, 다르면 false로 일치 여부를 판별한다.   
+파라미터로 plain값과 encoding 값을 넘겨주면 해당 encoding 된 값에서 salt 값과 반복 횟수를 찾아서 plain 값을 encoding 한다. 그 결과 값을 파라미터로 전달받은 encoding 값과 비교하여 같으면 true, 다르면 false로 일치 여부를 판별한다.   
 
 
 느낀점...   
